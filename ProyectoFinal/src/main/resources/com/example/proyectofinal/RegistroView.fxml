@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinal.RegistroController">
+   <children>
+      <Label layoutX="165.0" layoutY="24.0" text="Registrar Usuario">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="77.0" prefHeight="19.0" prefWidth="600.0" />
+      <Label layoutX="120.0" layoutY="140.0" text="UserName:" />
+      <TextField fx:id="tfUserName" layoutX="205.0" layoutY="140.0" />
+      <Label layoutX="120.0" layoutY="190.0" text="PassWord:" />
+      <Label layoutX="152.0" layoutY="240.0" text="Email:" />
+      <Label layoutX="67.0" layoutY="340.0" text="Fecha Nacimiento:" />
+      <Label layoutX="139.0" layoutY="290.0" text="Genero:" />
+      <TextField fx:id="tfPassWord" layoutX="205.0" layoutY="190.0" />
+      <TextField fx:id="tfEMail" layoutX="205.0" layoutY="240.0" />
+      <TextField fx:id="tfGenero" layoutX="205.0" layoutY="290.0" promptText="H/M" />
+      <TextField fx:id="tfFechaNacimiento" layoutX="205.0" layoutY="340.0" promptText="AAAA-MM-DD" />
+      <Separator layoutY="511.0" prefHeight="19.0" prefWidth="600.0" />
+      <Label layoutX="41.0" layoutY="537.0" text="Edicion Spotify">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chbPremium" layoutX="41.0" layoutY="590.0" mnemonicParsing="false" onAction="#premium" text="Premium" />
+      <CheckBox fx:id="chbFree" layoutX="41.0" layoutY="641.0" mnemonicParsing="false" onAction="#free" text="Free" />
+      <Separator layoutX="-1.0" layoutY="674.0" prefHeight="19.0" prefWidth="600.0" />
+      <Button fx:id="bGuardarRegistro" layoutX="264.0" layoutY="702.0" mnemonicParsing="false" onAction="#guardarRegistro" text="Guardar" />
+      <Button fx:id="bSalirRegistro" layoutX="277.0" layoutY="756.0" mnemonicParsing="false" onAction="#salirRegistro" text="Salir" />
+      <TextField fx:id="tfPais" layoutX="205.0" layoutY="390.0" />
+      <TextField fx:id="tfCodigoPostal" layoutX="205.0" layoutY="440.0" />
+      <Label layoutX="156.0" layoutY="390.0" text="Pais:" />
+      <Label layoutX="91.0" layoutY="440.0" text="Codigo Postal:" />
+      <Separator layoutX="287.0" layoutY="520.0" orientation="VERTICAL" prefHeight="162.0" prefWidth="29.0" />
+      <Label layoutX="358.0" layoutY="537.0" text="Forma Pago">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chbTarjetaCredito" layoutX="358.0" layoutY="591.0" mnemonicParsing="false" onAction="#premium" text="Tarjeta Credito" />
+      <CheckBox fx:id="chbPayPal" layoutX="358.0" layoutY="641.0" mnemonicParsing="false" onAction="#premium" text="PayPal" />
+   </children>
+</Pane>

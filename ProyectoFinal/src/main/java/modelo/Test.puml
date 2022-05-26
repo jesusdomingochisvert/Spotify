@@ -1,0 +1,21 @@
+@startuml
+
+class Usuario
+
+class Free
+
+    Usuario --> Free
+
+class Premium
+
+    Usuario --> Premium
+
+class CancionFree
+
+    Free --> CancionFree
+
+class CancionPremium
+
+    Premium --> CancionPremium
+
+@enduml
